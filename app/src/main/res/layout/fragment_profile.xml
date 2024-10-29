@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F5"
+    tools:context=".ProfileFragment">
+
+    <!-- Container lingkaran putih untuk gambar -->
+    <FrameLayout
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:background="@drawable/circle_background"
+        android:layout_gravity="center">
+
+        <!-- Gambar profil -->
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="140dp"
+            android:src="@drawable/image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <!-- Nama -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2E2E3A"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- NIM -->
+    <TextView
+        android:id="@+id/nimTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:textSize="20sp"
+        android:textColor="#2E2E3A"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

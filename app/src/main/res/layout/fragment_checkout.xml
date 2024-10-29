@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CheckoutFragment">
+
+    <TextView
+        android:id="@+id/txt_product_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Order Ticket"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edt_jns_tiket"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Jenis Tiket"
+        android:background="@drawable/form"
+        android:layout_marginTop="18dp"
+        android:clickable="false" android:focusable="false"
+        android:longClickable="false"
+        android:textIsSelectable="false" />
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_style"
+        app:backgroundTint="@null"
+        android:text="Buy Ticket"
+        android:textStyle="bold"/>
+
+</LinearLayout>
